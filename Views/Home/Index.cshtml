@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Hireachy View";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<div class="text-center row">
+    <div class="my-menu col-md-9">
+        <ul class='my-nav mg-accordion mg-flat' id="parent_0"></ul>
+    </div>
+    <div class="col-md-3 details">
+        <div class="jumbotron">
+            <h1 id="employeeName">Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+            responsive, mobile-first projects on the web.</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var apiUrl = '@Url.Action("GetJsonData")';
+</script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/home.js"></script>

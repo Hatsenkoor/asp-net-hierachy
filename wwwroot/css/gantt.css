@@ -1,0 +1,115 @@
+table.tb-gantt {
+    position: relative;
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 11px;
+    font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-collapse: collapse;
+    display: block;
+    overflow: auto;
+    max-height: 450px;
+  /* border-radius: .25rem; */
+}
+
+table.tb-gantt thead th {
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+table.tb-gantt tbody .td-bg1 {
+    background: #f2f3f4;
+}
+
+table.tb-gantt thead .month-name-par {
+    background-color: gray;
+    color: black;
+}
+
+table.tb-gantt thead .month-name-odd {
+    background-color: lightgray;
+    color: black;
+}
+
+
+table.tb-gantt thead .days {
+    background-color: #212529;
+    color: white;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+
+table.tb-gantt thead .days > p{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    padding: 3px 0px 0px 0px;
+    border-right: 1px solid dimgray;
+}
+
+table.tb-gantt tbody .td-tasks {
+    text-align: center;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+table.tb-gantt thead th:nth-child(1) {/*first cell in the header*/
+    min-width: 200px;
+}
+
+table.tb-gantt tbody tr th:nth-child(1) {  /*the first cell in each tr*/
+    height: 20px;
+    min-width: 200px;
+    background-color: #ADD8E6;
+    margin:0px;
+    padding-top:3px;
+    padding-left:0px;
+    color: black;
+}
+
+table.tb-gantt tbody tr th:nth-child(1) > p{
+    height: 100%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    text-align: left;
+    border-bottom: 1px solid #1E90FF;
+}
+
+table.tb-gantt tbody tr:last-child > th:first-child > p {
+    border-bottom: none;
+}
+
+div.tooltip-gantt{
+    width:auto;
+    height:auto;
+    color:white;
+    background: darkslategrey;
+    position:absolute;
+    z-index:10001;
+    padding:10px 10px 10px 10px;
+    line-height: 200%;
+    border-radius: .25rem;
+}
+
+table.tb-gantt tbody .td-tasks > .div-task{
+	/* border-radius: .25rem; */
+    min-height: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+
+table.tb-gantt tbody .td-tasks > .border-radius-full{
+    border-radius: .25rem;
+}
+
+table.tb-gantt tbody .td-tasks > .border-radius-left{
+    border-radius: .25rem 0 0 .25rem;
+}
+
+table.tb-gantt tbody .td-tasks > .border-radius-right{
+    border-radius: 0 .25rem .25rem 0;
+}
